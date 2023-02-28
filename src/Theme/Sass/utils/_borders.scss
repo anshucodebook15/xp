@@ -1,0 +1,37 @@
+
+.bod-t {
+  border: 1px solid red;
+}
+
+/* Border width*/
+@each $key, $val in $borders {
+  .bod-#{$key} {
+    border: $val solid;
+  }
+  .bodl-#{$key} {
+    border-left: $val solid;
+  }
+  .bodr-#{$key} {
+    border-right: $val solid;
+  }
+  .bodt-#{$key} {
+    border-top: $val solid;
+  }
+  .bodb-#{$key} {
+    border-bottom: $val solid;
+  }
+}
+
+/* Border color*/
+@each $key, $val in $grey-scale {
+  .bod-gs-#{$key} {
+    border-color: $val;
+  }
+}
+
+/* Border Radius*/
+@each $key, $val in $borders-radius {
+  .bod-r-#{$key} {
+    border-radius: $val;
+  }
+}

@@ -1,0 +1,45 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Display */
+@each $key, $val in $display {
+
+  .dx-#{$key} {
+    display: $val;
+  }
+
+  @include lg {
+    .dx-lg-#{$key} {
+      display: $val;
+    }
+  }
+
+  @include md {
+    .dx-md-#{$key} {
+      display: $val;
+    }
+  }
+
+  @include sm {
+    .dx-sm-#{$key} {
+      display: $val;
+    }
+  }
+}
+
+.txtc {
+  text-align: center;
+}
+.txtr {
+  text-align: right;
+}
+
+.lstn {
+  list-style-type: none;
+}
+
+// Position

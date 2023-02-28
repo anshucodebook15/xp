@@ -1,0 +1,6 @@
+// Major Changes
+
+Menu At the Top
+1. Explorer
+2. Clubs
+3. Pixeling

@@ -1,0 +1,556 @@
+.xp_header {
+  width: 100%;
+  background-color: #010101;
+  background-image: url("../../Assets/backgrounds/xpunk-hero-nft.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 60%;
+  background-size: 30rem;
+  position: relative;
+
+  &-bg-video {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+
+    top: 30rem;
+    left: -48rem;
+    height: 500px;
+  }
+
+  &-nav {
+    border-bottom: 1px solid grey;
+    background-color: #000;
+    &-whitenft {
+      width: 3rem;
+    }
+    &-navlinks {
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    &-icon {
+      width: 2.7rem;
+    }
+  }
+
+  &-hero {
+    position: relative;
+    z-index: 10;
+
+    .youtube-video {
+      width: 60%;
+      height: 35rem;
+
+      padding-bottom: 1.2rem;
+    }
+
+    &-btn {
+      padding: 1.5rem 6rem;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+  }
+
+  //   Media Queries
+  @include lg {
+    &-logo {
+      width: 50%;
+    }
+  }
+
+  @include md {
+    &-logo {
+      width: 50%;
+    }
+
+    &-heading {
+      font-size: 6rem;
+      letter-spacing: 0.1rem;
+      line-height: 1.2;
+      &-style {
+        font-size: 4.8rem;
+      }
+
+      &-logo {
+        width: 30rem;
+      }
+    }
+
+    // Video
+    &-video {
+      z-index: 2;
+
+      &-text {
+        height: 30rem;
+        max-width: 70%;
+      }
+
+      &-window {
+        margin-top: -12rem;
+      }
+    }
+  }
+
+  @include sm {
+    &-bg-video {
+      width: 120%;
+
+      top: 45rem;
+      left: -25rem;
+      height: 500px;
+    }
+
+    &-hero {
+      &-logo {
+        width: 80%;
+      }
+
+      .youtube-video {
+        width: 80%;
+        height: 30rem;
+
+        padding-bottom: 1.2rem;
+      }
+
+      &-btn {
+        padding: 1.5rem 6rem;
+        border-radius: 5px;
+        font-weight: 600;
+
+        &-text {
+          max-width: 200%;
+        }
+      }
+    }
+  }
+}
+
+.xp_about {
+  background-image: url("../../Assets/backgrounds/about-ver-lines-bg.svg");
+  background-repeat: no-repeat;
+  color: #000;
+  font-weight: 500;
+
+  &-cta {
+    &-btn {
+      background-color: #000;
+      color: #fff;
+      font-weight: 700;
+      margin-right: 2rem;
+      border-radius: 5px;
+    }
+
+    &-btn:hover {
+      background-color: #131313;
+      color: #fff;
+    }
+  }
+}
+
+.xp_achievement {
+  background-color: #000;
+  color: #fff;
+
+  &-bg {
+    background-image: url("/Assets/svg/achievement_grid.svg");
+    background-size: contain;
+    max-height: 100vh;
+  }
+
+  &-heading {
+    font-family: "Inter", sans-serif;
+    padding-left: 6.7rem;
+    padding-top: 2.3rem;
+    h2 {
+      font-size: 7rem !important;
+    }
+  }
+
+  .xp_a-info-1 {
+    background-color: #000;
+    margin-left: 14.5rem;
+    margin-top: 3.3rem;
+  }
+  .xp_a-info-2 {
+    background-color: #e9e9e9;
+    color: #000;
+    margin-left: 19.7rem;
+  }
+
+  @include lg {
+    &-bg {
+      background-size: contain;
+      max-height: 100vh;
+    }
+
+    &-heading {
+      font-family: "Inter", sans-serif;
+      padding-left: 4rem;
+      padding-top: 3.1rem;
+      h2 {
+        font-size: 7rem !important;
+      }
+    }
+
+    .xp_a-info-1 {
+      background-color: #000;
+      margin-left: 14.5rem;
+      margin-top: 3.3rem;
+    }
+    .xp_a-info-2 {
+      background-color: #e9e9e9;
+      color: #000;
+      margin-left: 19.7rem;
+    }
+  }
+
+  @include md {
+    &-bg {
+      background-size: cover;
+      max-height: 100vh;
+    }
+
+    &-heading {
+      padding-left: 4rem;
+      padding-top: 5rem;
+      h2 {
+        font-size: 6rem !important;
+      }
+    }
+
+    .xp_a-info-1 {
+      width: 80%;
+      margin-left: 5rem;
+      margin-top: 5rem;
+    }
+
+    .xp_a-info-2 {
+      width: 80%;
+      background-color: #e9e9e9;
+      color: #000;
+      margin-left: 12rem;
+    }
+  }
+
+  @include sm {
+    &-bg {
+      background-size: cover;
+      max-height: 100vh;
+    }
+
+    &-heading {
+      font-family: "Inter", sans-serif;
+      padding-left: 4rem;
+      padding-top: 7.5rem;
+      h2 {
+        font-size: 7rem !important;
+      }
+    }
+
+    .xp_a-info-1 {
+      width: 80%;
+      margin-left: 3rem;
+      margin-top: 8.5rem;
+    }
+    .xp_a-info-2 {
+      width: 80%;
+      margin-left: 8rem;
+    }
+  }
+}
+
+.xp_pg {
+  &-head {
+    border-bottom: 1px solid #000;
+
+    h2 {
+      padding: 0;
+      margin-bottom: -2.3rem;
+      font-family: "Inter", sans-serif;
+      color: #000;
+      padding-left: 4rem;
+      padding-top: 3.1rem;
+      font-size: 7rem !important;
+    }
+  }
+
+  &-slide {
+    padding-left: 18rem;
+
+    &-box {
+      // width: 30%;
+      border-right: 1px solid #000;
+      padding-left: 8rem;
+      padding-right: 4rem;
+
+      &-num {
+        font-family: "Heebo", sans-serif;
+        h2 {
+          font-weight: 900;
+          font-size: 8rem;
+          color: #fff;
+          -webkit-text-stroke: 1px rgb(16, 16, 16);
+        }
+      }
+    }
+  }
+}
+
+.xp_goals {
+  background-color: #000;
+
+  &-head {
+    border-bottom: 1px solid #fff;
+
+    h2 {
+      color: #fff;
+    }
+  }
+
+  &-box {
+    border-right: 1px solid #ffffff;
+  }
+
+  &-num {
+    h2 {
+      color: #000000;
+      -webkit-text-stroke: 1px rgb(255, 255, 255);
+    }
+  }
+}
+
+.xp_team {
+  background-image: url("../../Assets/backgrounds/about-ver-lines-bg.svg");
+  background-repeat: no-repeat;
+
+  &-lead {
+    position: relative;
+
+    &-box {
+      width: 25%;
+      transform: rotate(-10deg);
+
+      &-img {
+        border-radius: 10px;
+      }
+
+      &-txt {
+        background-color: #000;
+        color: #fff;
+        position: absolute;
+        bottom: -3%;
+        left: 5%;
+
+        h5 {
+          margin: 0;
+          padding: 0.6rem;
+          // padding-right: 8rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  &-icon {
+    width: 3rem;
+  }
+}
+
+.xp_faq {
+  background-image: url("../../Assets/backgrounds/about-ver-lines-bg.svg");
+  background-repeat: no-repeat;
+}
+
+.xp_achievement-pg {
+  border-bottom: 1px solid #000;
+}
+
+.xp_roadmap {
+  width: 100%;
+  height: 30vh;
+  background-image: url("../../Assets/backgrounds/black-texture-jpg.jpg");
+}
+
+.xpunk-layer {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  height: 10rem;
+  margin-bottom: 2.8rem;
+
+  &-text {
+    width: 100%;
+    font-size: 11rem;
+    font-weight: 900 !important;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .xlt-1 {
+    -webkit-text-stroke: 0.7px rgb(44, 44, 44);
+    color: #ffffff00;
+    top: 30%;
+  }
+  .xlt-2 {
+    -webkit-text-stroke: 0.7px rgb(50, 50, 50);
+    color: #ffffff00;
+    top: 35%;
+  }
+  .xlt-3 {
+    -webkit-text-stroke: 0.7px rgb(29, 29, 29);
+    color: #ffffff00;
+    top: 42%;
+  }
+
+  //   Media Queries
+  @include lg {
+    margin-bottom: -1rem;
+    &-text {
+      font-size: 7rem;
+    }
+
+    .xlt-1 {
+      top: 35%;
+    }
+    .xlt-2 {
+      top: 40%;
+    }
+    .xlt-3 {
+      top: 45%;
+    }
+  }
+
+  @include md {
+    margin-bottom: 0.8rem;
+    &-text {
+      font-size: 8rem;
+    }
+
+    .xlt-1 {
+      top: 35%;
+    }
+    .xlt-2 {
+      top: 40%;
+    }
+    .xlt-3 {
+      top: 45%;
+    }
+  }
+
+  @include sm {
+    margin-bottom: 0.5rem;
+
+    &-text {
+      font-size: 7.5rem;
+    }
+
+    .xlt-1 {
+      top: 35%;
+    }
+    .xlt-2 {
+      top: 40%;
+    }
+    .xlt-3 {
+      top: 44%;
+    }
+  }
+}
+
+.line-btn {
+  position: relative;
+  transition: all 0.2s;
+
+  &-r {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-1 {
+    border: 1px solid #eee;
+    background-color: #000;
+    top: 30%;
+  }
+  &-2 {
+    border: 1px solid #eee;
+    background-color: #000;
+    top: 35%;
+  }
+  &-3 {
+    border: 1px solid #eee;
+    top: 42%;
+  }
+  &-3:hover {
+    background-color: #000;
+    border: 1px solid #eee;
+    top: 42%;
+  }
+
+  @include lg {
+  }
+
+  @include md {
+  }
+
+  @include sm {
+  }
+}
+
+.line-btn-black {
+  position: relative;
+  transition: all 0.2s;
+
+  &-r {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-1 {
+    background-color: #fff;
+    border: 1px solid #000000;
+    top: 25%;
+  }
+  &-2 {
+    background-color: #fff;
+    border: 1px solid #000000;
+    top: 90%;
+  }
+  &-3 {
+    border: 1px solid #050505;
+    top: 45%;
+  }
+  &-3:hover {
+    background-color: #efefef;
+    color: #000;
+    top: 42%;
+  }
+
+  @include lg {
+  }
+
+  @include md {
+  }
+
+  @include sm {
+  }
+}
+
+.bod-t {
+  border: 1px solid red;
+}
+
+// @include lg {
+// }
+
+// @include md {
+// }
+
+// @include sm {
+// }

@@ -1,0 +1,22 @@
+/* margin */
+@each $key, $val in $utils {
+  .m#{$key} {
+    margin: $val;
+  }
+
+  .ml#{$key} {
+    margin-left: $val;
+  }
+
+  .mr#{$key} {
+    margin-right: $val;
+  }
+
+  .mt#{$key} {
+    margin-top: $val;
+  }
+
+  .mb#{$key} {
+    margin-bottom: $val;
+  }
+}

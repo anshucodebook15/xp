@@ -1,0 +1,27 @@
+/* Grey Scale */
+@each $key, $val in $grey-scale {
+  .gs-#{$key} {
+    color: $val;
+  }
+}
+
+/* Colors  */
+@each $key, $val in $colors {
+  .clr-#{$key} {
+    color: $val;
+  }
+}
+
+/* Background Colors  */
+@each $key, $val in $colors {
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  .bg-h-#{$key}:hover {
+    background-color: $val;
+  }
+
+
+
+}

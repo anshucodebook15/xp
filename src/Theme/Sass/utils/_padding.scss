@@ -1,0 +1,120 @@
+/* Padding */
+@each $key, $val in $utils {
+  .p#{$key} {
+    padding: $val;
+  }
+
+  .pl#{$key} {
+    padding-left: $val;
+  }
+
+  .pr#{$key} {
+    padding-right: $val;
+  }
+
+  .pt#{$key} {
+    padding-top: $val;
+  }
+
+  .pb#{$key} {
+    padding-bottom: $val;
+  }
+
+  .pvr#{$key} {
+    padding-block: $val;
+  }
+
+  .phr#{$key} {
+    padding-inline: $val;
+  }
+
+  @include lg {
+    .p-lg#{$key} {
+      padding: $val;
+    }
+
+    .pl-lg#{$key} {
+      padding-left: $val;
+    }
+
+    .pr-lg#{$key} {
+      padding-right: $val;
+    }
+
+    .pt-lg#{$key} {
+      padding-top: $val;
+    }
+
+    .pb-lg#{$key} {
+      padding-bottom: $val;
+    }
+
+    .pvr-lg#{$key} {
+      padding-block: $val;
+    }
+
+    .phr-lg#{$key} {
+      padding-inline: $val;
+    }
+  }
+
+  @include md {
+    .p-md#{$key} {
+      padding: $val;
+    }
+
+    .pl-md#{$key} {
+      padding-left: $val;
+    }
+
+    .pr-md#{$key} {
+      padding-right: $val;
+    }
+
+    .pt-md#{$key} {
+      padding-top: $val;
+    }
+
+    .pb-md#{$key} {
+      padding-bottom: $val;
+    }
+
+    .pvr-md#{$key} {
+      padding-block: $val;
+    }
+
+    .phr-md#{$key} {
+      padding-inline: $val;
+    }
+  }
+
+  @include sm {
+    .p-sm#{$key} {
+      padding: $val;
+    }
+
+    .pl-sm#{$key} {
+      padding-left: $val;
+    }
+
+    .pr-sm#{$key} {
+      padding-right: $val;
+    }
+
+    .pt-sm#{$key} {
+      padding-top: $val;
+    }
+
+    .pb-sm#{$key} {
+      padding-bottom: $val;
+    }
+
+    .pvr-sm#{$key} {
+      padding-block: $val;
+    }
+
+    .phr-sm#{$key} {
+      padding-inline: $val;
+    }
+  }
+}
